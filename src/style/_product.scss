@@ -1,0 +1,25 @@
+.product {
+&__link {
+
+}
+&__title {
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+padding: 16px;
+@include tablet {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+}
+&__row {
+
+}
+&__price {
+
+}
+&__btn_favorite { 
+
+}
+}

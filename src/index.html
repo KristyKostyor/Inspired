@@ -5,13 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="preload" href="fonts/inter-v12-latin_cyrillic-600.woff2" as="font" crossorigin>
+<link rel="preload" href="fonts/montserrat-v23-latin_cyrillic-700.woff2" as="font" crossorigin>
+<link rel="preload" href="fonts/inter-v12-latin_cyrillic-regular.woff2" as="font" crossorigin>
 
-
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   <title>Inspired - онлайн магазин нижнего белья</title>
 </head>
 <body>
   <header class="header">
- <div class="container">
+ <div class="container header__container">
   <a href="tel:89304902620" class="header__phone header__link">8 930 490 26 20</a>
   <img class="header__logo"   src="img/logo.svg" alt="логотип Inspired">
   <div class="header__navigation">
@@ -52,7 +61,7 @@
   <div class="container">
     <ul class="navigation__gender gender">
       <li class="gender__item">
-        <a href="#" class="gender__link gender__link--active">Женщины</a>
+        <a href="#" class="gender__link gender__link_active">Женщины</a>
       </li>
         <li class="gender__item">
         <a href="#" class="gender__link ">Мужчины</a>
@@ -60,7 +69,7 @@
     </ul>
     <ul class="navigation__category category">
 <li class="category__item">
-  <a href="#" class="category__link">Бюстгальтеры</a>
+  <a href="#" class="category__link category__link_active">Бюстгальтеры</a>
 </li>
 <li class="category__item">
   <a href="#" class="category__link">Трусы</a>
@@ -100,7 +109,55 @@
           </a>
           <div class="product__row">
             <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
+            <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
+          </div>
+          <ul class="product__color-list">
+            
+            
+          </ul>
+        </article>
+      </li>
+       <li class="goods__item">
+        <article class="product">
+          <a href="#" class="product__link">
+            <img src="./img/product02.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
+            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
+          </a>
+          <div class="product__row">
+            <p class="product__price">руб 2999</p>
+            <button class="product__btn_favorite" aria-label="Добавить в избранное"></button>
+          </div>
+          <ul class="product__color-list">
+            
+            
+          </ul>
+        </article>
+      </li>
+       <li class="goods__item">
+        <article class="product">
+          <a href="#" class="product__link">
+            <img src="./img/product01.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
+            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
+          </a>
+          <div class="product__row">
+            <p class="product__price">руб 2999</p>
+            <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
+          </div>
+          <ul class="product__color-list">
+            
+            
+          </ul>
+        </article>
+      </li>
+       <li class="goods__item">
+        <article class="product">
+          <a href="#" class="product__link">
+            <img src="./img/product02.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
+            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
+          </a>
+          <div class="product__row">
+            <p class="product__price">руб 2999</p>
+            <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
           </div>
           <ul class="product__color--list">
             
@@ -116,9 +173,9 @@
           </a>
           <div class="product__row">
             <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
+            <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
           </div>
-          <ul class="product__color--list">
+          <ul class="product__color-list">
             
             
           </ul>
@@ -127,62 +184,14 @@
        <li class="goods__item">
         <article class="product">
           <a href="#" class="product__link">
-            <img src="./img/product01.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
+            <img src="./img/product02.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
             <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
           </a>
           <div class="product__row">
             <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
+            <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
           </div>
-          <ul class="product__color--list">
-            
-            
-          </ul>
-        </article>
-      </li>
-       <li class="goods__item">
-        <article class="product">
-          <a href="#" class="product__link">
-            <img src="./img/product01.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
-            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
-          </a>
-          <div class="product__row">
-            <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
-          </div>
-          <ul class="product__color--list">
-            
-            
-          </ul>
-        </article>
-      </li>
-       <li class="goods__item">
-        <article class="product">
-          <a href="#" class="product__link">
-            <img src="./img/product01.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
-            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
-          </a>
-          <div class="product__row">
-            <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
-          </div>
-          <ul class="product__color--list">
-            
-            
-          </ul>
-        </article>
-      </li>
-       <li class="goods__item">
-        <article class="product">
-          <a href="#" class="product__link">
-            <img src="./img/product01.jpg" alt="Бюстгальтер-Балконет Wien из Микрофибры" class="product__image">
-            <h3 class="product__title">Бюстгальтер-Балконет Wien из Микрофибры</h3>
-          </a>
-          <div class="product__row">
-            <p class="product__price">руб 2999</p>
-            <button class="product__btn--favorite" aria-label="Добавить в избранное"></button>
-          </div>
-          <ul class="product__color--list">
+          <ul class="product__color-list">
             
             
           </ul>
@@ -196,7 +205,7 @@
   <footer class="footer">
 <div class="container">
 <div class="footer__container">
-  <div class="footer__item footer__item--category footer-category">
+  <div class="footer__item footer__item-category footer-category">
     <h2 class="footer__title footer-category__title">Каталог</h2>
     <ul class="footer-category__list">
       <li class="footer-category__item">
@@ -241,7 +250,7 @@
       </li>
     </ul>
   </div>
-  <div class="footer__item footer__item--social footer-social">
+  <div class="footer__item footer__item-social footer-social">
        <h2 class="footer__title footer-social__title">Связаться с нами</h2>
        <h3 class="footer-social__subtitle">Контакты и адреса магазинов</h3>
        <ul class="footer-social__list">
@@ -260,14 +269,14 @@
         </li>
        </ul>
   </div>
-  <div class="footer__item footer__item--contacts footer-contacts">
+  <div class="footer__item footer__item-contacts footer-contacts">
     <a  class="footer__link" href="mailto:Inspired@gmail.com">Inspired@gmail.com</a>
      <a class="footer__link" href="tel:89304902620">8 930 490 26 20</a>
   </div>
-  <div class="footer__item footer__item--copyright footer-copyright">
+  <div class="footer__item footer__item-copyright footer-copyright">
     <p>© INSPIRED, 2023</p>
   </div>
-  <div class="footer__item footer__item--development footer-development">
+  <div class="footer__item footer__item_development footer-development">
     <ul class="footer-development__list">
 <li class="footer-development"><a href="#">Designer: Anastasia Ilina</a></li>
 <li class="footer-development"><a href="#">Develop: Kristina Kosterkina</a></li>

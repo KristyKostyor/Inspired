@@ -12,9 +12,10 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Inter';
+  font-family: Inter, sans-serif;
   background-color: $secod-color;
   color: $main-color;
+  font-weight: 400;
 }
 
 
@@ -27,6 +28,7 @@ img, svg {
 
 
 button {
+  display: block;
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -74,9 +76,34 @@ fieldset {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
+main {
+  margin-bottom: 120px;
+
+@include tablet {
+  margin-bottom: 80px;
+}
+
+@include mobile {
+  margin-bottom: 60px;
+}
+}
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  --max-width: 1180px;
+  --padding: 30px;
+  max-width: calc(var(--max-width) + var(--padding) * 2);
+  padding: 0 var(--padding);
   margin: 0 auto;
+
+@include laptop {
+    --max-width: 880px;
+}
+
+@include tablet {
+     --max-width: 620px;
+}
+
+@include mobile {
+  --padding: 15px;
+}
 }

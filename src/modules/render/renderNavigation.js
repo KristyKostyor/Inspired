@@ -30,7 +30,7 @@ export const renderNavigation = (gender) => {
       "a",
       {
         className: `gender__link 
-        ${gender === genderName ? "gender__link_active" : ""}`,
+        ${gender === genderName ? "gender__link_active" : "" }`,
         href: `#/${genderName}`,
         textContent: dataNavigation[genderName].title
     },
@@ -41,10 +41,10 @@ export const renderNavigation = (gender) => {
           },
           {
             parent: genderList,
-          },
-        ),
-      },
-    );
+          }
+        )
+      }
+    )
   };
 
 const categoryElems = dataNavigation[gender].list.map((item) =>
@@ -61,7 +61,7 @@ const categoryElems = dataNavigation[gender].list.map((item) =>
         href: `#/${gender}/${item.slug}`},
       
       {
-           cb(elem){
+        cb(elem){
         elem.addEventListener('click', ()=>{
           document
             .querySelector(".category__link_active")

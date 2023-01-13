@@ -8,7 +8,7 @@ if(!gender){
 }
 hero.style.display = ""; 
 
-hero.className = `hero hero__${gender}`;
+hero.className = `hero hero__${gender}`
 
 
     hero.innerHTML = `

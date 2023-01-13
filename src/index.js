@@ -19,11 +19,11 @@ router.on("/", () => {
     mainPage();
 });
 
-router.on("woman", () => {
+router.on("women", () => {
   womenMainPage();
 });
 
-router.on("man", () => {
+router.on("men", () => {
   menMainPage();
 });
 /*setTimeout(() => {

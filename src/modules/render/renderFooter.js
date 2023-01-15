@@ -1,5 +1,6 @@
 export const renderFooter = () => {
     const footer = document.querySelector ('.footer');
+    
     footer.innerHTML = `
     <div class="container">
 <div class="footer__container">

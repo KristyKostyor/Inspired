@@ -1,5 +1,6 @@
+import { DATA } from "../const";
 import { createElement } from "../createElement";
-import { dataNavigation } from "../dataNavigation";
+
 
 export const renderNavigation = (gender) => {
   const navigation = document.querySelector(".navigation");
@@ -25,14 +26,14 @@ export const renderNavigation = (gender) => {
     }
   );
 
-  for (const genderName in dataNavigation) {
+  for (const genderName in DATA.navigation) {
     createElement(
       "a",
       {
         className: `gender__link 
         ${gender === genderName ? "gender__link_active" : "" }`,
         href: `#/${genderName}`,
-        textContent: dataNavigation[genderName].title
+        textContent: DATA.navigation[genderName].title
     },
       {
         parent: createElement( "li",
@@ -47,33 +48,33 @@ export const renderNavigation = (gender) => {
     )
   };
 
-const categoryElems = dataNavigation[gender].list.map((item) =>
+const categoryElems = DATA.navigation[gender].list.map((item) =>
   createElement(
     "li",
     {
       className: "category__item",
     },
     {
-      append: createElement("a", 
-      {
-        className: "category__link",
-        textContent: item.title,
-        href: `#/${gender}/${item.slug}`},
-      
-      {
-        cb(elem){
-        elem.addEventListener('click', ()=>{
-          document
-            .querySelector(".category__link_active")
-            ?.classList.remove("category__link_active");
+      append: createElement(
+        "a",
+        {
+          className: "category__link",
+          textContent: item.title,
+          href: `#/${gender}/${item.slug}`,
+        },
 
-            elem.classList.add("category__link_active");
-        })
-      }
-      }),
-   
-    },
-    
+        {
+          cb(elem) {
+            elem.addEventListener("click", () => {
+              document
+                .querySelector(".category__link_active")
+                ?.classList.remove("category__link_active");
+
+              elem.classList.add("category__link_active");
+            })
+          },
+        }),
+    }
   )
 );
 
@@ -89,6 +90,4 @@ createElement(
       appends: categoryElems,
     },
   );
-
-
 };

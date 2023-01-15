@@ -1,5 +1,5 @@
 import { mainPage } from "./mainPage";
 
 export const menMainPage = () => {
-mainPage('mеn');
+mainPage('men');
 };

@@ -19,14 +19,5 @@
     border-radius: 50%;
 }
 
-    &_red:after{
-        background-color: red;
-    }
-    &_white:after{
-        background-color: white;
-        border: 1px solid $gray;
-    }
-    &_black:after {
-        background-color: black;
-    }
+
 }

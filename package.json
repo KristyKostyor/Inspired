@@ -3,6 +3,7 @@
   "version": "1.2.1",
   "description": "",
   "main": "index.js",
+  "homework": "https://KristyKostyor.github.io/Inspired",
   "scripts": {
     "start": "webpack serve",
     "build-dev": "webpack",

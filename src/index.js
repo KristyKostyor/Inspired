@@ -1,15 +1,16 @@
 import './index.html';
 import './index.scss';
 
-import { router } from "./modules/router";
+import { router } from "./modules/utils/router";
 import { renderFooter } from './modules/render/renderFooter';
 import { renderHeader } from './modules/render/renderHeader';
 import { getData } from './modules/getData';
 import { API_URL, DATA } from './modules/const';
 import { createCssColors } from './modules/createCssColors';
-import { createElement } from './modules/createElement';
-import { mainPage } from './modules/mainPage';
-import { categoryPage } from './modules/pageCategory';
+import { createElement } from './modules/utils/createElement';
+import { mainPage } from './modules/controllers/mainPage';
+import { categoryPage } from './modules/controllers/pageCategory';
+import { searchPageController } from './modules/controllers/searchController';
 
 const init = async  () => {
   try{
@@ -36,9 +37,9 @@ const init = async  () => {
     
     router.on("/:gender/:category", categoryPage);
 
-        router.on("search", (data) => {
-        console.log(data.params.value)
-        });
+        router.on("search", searchPageController);
+
+        
     /*setTimeout(() => {
     router.navigate('man')
 }, 3000);

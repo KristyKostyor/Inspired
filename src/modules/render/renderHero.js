@@ -1,5 +1,5 @@
 import { TITLE } from "../const";
-import { createElement } from "../createElement";
+import { createElement } from "../utils/createElement";
 
 const container = createElement("div", {
   className: "container",

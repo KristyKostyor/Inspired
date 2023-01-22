@@ -1,6 +1,7 @@
-import { DATA } from "../const";
+import { DATA, footer } from "../const";
 import { createElement } from "../utils/createElement";
-import { router } from "../utils/router";
+
+
 const createFooterCategory = () => {
   const footerCategory = createElement("div", {
     className: "footer__item footer__item-category footer-category",
@@ -72,7 +73,7 @@ const createFooterCategory = () => {
 }
 
 export const renderFooter = () => {
-    const footer = document.querySelector ('.footer');
+  
     footer.textContent = '';
     const container = createElement("div", {
       className: "container footer__container",
